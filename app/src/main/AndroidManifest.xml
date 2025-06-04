@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MemooApp"
         tools:targetApi="31">
+<!--        <service-->
+<!--            android:name=".YourBackgroundService"-->
+<!--            android:exported="false"-->
+<!--            android:isolatedProcess="false"/>-->
         <activity
             android:name=".MainActivity"
             android:exported="true"
